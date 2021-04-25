@@ -1,0 +1,44 @@
+<div class="back-ground-image bg-edge2edge" [dir]="dir">
+    <div class="container d-flex justify-content-center">
+        <div class="col-12">
+            <mat-toolbar>
+                <button mat-mini-fab color="primary"><i class="fa fa-home"></i></button>
+                <span class="home-text">{{"Auth.home" | translate}}</span>
+
+                <span class="example-spacer"></span>
+               
+                    <button mat-icon-button class="social-button">
+                        <i class="fa fa-twitter"></i>
+                    </button>
+                    <button mat-icon-button class="social-button">
+                        <i class="fa fa-whatsapp "></i>
+                    </button>
+                    <button mat-icon-button class="social-button">
+                        <i class="fa fa-facebook-f"></i>
+                    </button>
+                    <button mat-icon-button class="social-button">
+                        <i class="fa fa-instagram"></i>
+                    </button>
+                    <button mat-icon-button class="social-button">
+                        <i class="fa fa-youtube-play"></i>
+                    </button>
+                    <span class="separator">|</span>
+                    <button mat-icon-button class="social-button" (click) ="toggleLanguage()">
+                        <span class="lang-text">{{ "Auth.lang" | translate}}</span>
+                    </button>
+
+                    
+              
+              </mat-toolbar>
+
+            <div class="row flex-row-reverse">
+                <div class="col-md-6 align-self-center">
+                    <mat-card>
+                        <router-outlet></router-outlet>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,133 @@
+<div class="text-center">
+    <h1>{{ 'Auth.signUp.signUp' | translate }}</h1>
+</div>
+
+<div class="container">
+    <mat-horizontal-stepper [disableRipple]="true">
+        <mat-step [stepControl]="signUpForm">
+            <form [formGroup]="signUpForm">
+                <mat-form-field class='col-md-12'>
+                    <mat-label>{{ 'Auth.signUp.emailAddress' | translate }}</mat-label>
+                    <input type="text" matInput fromControlName='emailAddress' />
+                </mat-form-field>
+
+                <mat-form-field class='col-md-6'>
+                    <mat-label>{{ 'Auth.signUp.firstName' | translate }}</mat-label>
+                    <input type="text" matInput fromControlName='firstName' />
+                </mat-form-field>
+
+
+                <mat-form-field class='col-md-6'>
+                    <mat-label>{{ 'Auth.signUp.secondName' | translate }}</mat-label>
+                    <input type="text" matInput fromControlName='secondName' />
+                </mat-form-field>
+
+                <mat-form-field class='col-md-6'>
+                    <mat-label>{{ 'Auth.signUp.thirdName' | translate }}</mat-label>
+                    <input type="text" matInput fromControlName='thirdName' />
+                </mat-form-field>
+
+                <mat-form-field class='col-md-6'>
+                    <mat-label>{{ 'Auth.signUp.fourthName' | translate }}</mat-label>
+                    <input type="text" matInput fromControlName='fourthName' />
+                </mat-form-field>
+
+                <mat-form-field class='col-md-12'>
+                    <mat-label>{{ 'Auth.signUp.password' | translate }}</mat-label>
+                    <input matInput placeholder="{{'Auth.signUp.sixCharactersAtLeast' | translate}}"
+                        [type]="hidePassword ? 'password' : 'text'" type="password" fromControlName='password' />
+                    <i class="fa fa-eye" matSuffix (click)="hidePassword = !hidePassword"></i>
+                </mat-form-field>
+
+                <mat-form-field class='col-md-12'>
+                    <mat-label>{{ 'Auth.signUp.confirmPassword' | translate }}</mat-label>
+                    <input matInput [type]="hideConfirmPassword ? 'password' : 'text'" type="password"
+                        fromControlName='confirmPassword' />
+                    <i class="fa fa-eye" matSuffix (click)="hideConfirmPassword = !hideConfirmPassword"></i>
+                </mat-form-field>
+
+                <div class="col-md-12 text-center">
+                    <button mat-flat-button class="col-md-12" color="primary">{{ 'Auth.signUp.signUp' | translate
+                        }}</button>
+                </div>
+
+                <br />
+
+                <div class="col-md-12 text-center">
+                    {{ 'Auth.signUp.alreadyHaveAccount' | translate }} <a>{{ 'Auth.login.signIn' | translate }}</a>
+                </div>
+
+                <br />
+
+                <div class="separator">{{ 'Auth.signUp.or' | translate }}</div>
+
+                <br />
+
+                <div class="col-md-12 text-center">
+                    <button mat-flat-button class="col-md-12 linkedin-button">
+                        <div class="d-flex justify-content-center social">
+                            <img src="../../../assets/icons/logo-linkedin-icon.png" width="28px" height="28px" />
+                            &nbsp; &nbsp;
+                            <div>LinkedIn</div>
+                        </div>
+                    </button>
+                </div>
+
+                <br />
+
+                <div class="col-md-12 text-center">
+                    <button mat-flat-button class="col-md-12 google-button">
+                        <div class="d-flex justify-content-center social">
+                            <img src="../../../assets/icons/Logo-google-icon.png" width="30px" height="30px" />
+                            &nbsp;&nbsp;
+                            <div>Google</div>
+                        </div>
+                    </button>
+
+                </div>
+            </form>
+        </mat-step>
+        <mat-step [stepControl]="useInfoForm">
+            <form [formGroup]="useInfoForm">
+
+                <mat-form-field class='col-md-12'>
+                    <mat-label>{{ 'Auth.signUp.jobTitle' | translate }}</mat-label>
+                    <input type="text" matInput fromControlName='jobTitle' />
+                </mat-form-field>
+
+                <mat-form-field class='col-md-6'>
+                    <mat-label>{{ 'Auth.signUp.companyName' | translate }}</mat-label>
+                    <input type="text" matInput fromControlName='companyName' />
+                </mat-form-field>
+
+
+                <mat-form-field class='col-md-6'>
+                    <mat-label>{{ 'Auth.signUp.lastName' | translate }}</mat-label>
+                    <input type="text" matInput fromControlName='companyLastName' />
+                </mat-form-field>
+
+                <mat-form-field class='col-md-6'>
+                    <mat-label>{{ 'Auth.signUp.address' | translate }}</mat-label>
+                    <input type="text" matInput fromControlName='address' />
+                </mat-form-field>
+
+                <mat-form-field class='col-md-6'>
+                    <mat-label>{{ 'Auth.signUp.lastName' | translate }}</mat-label>
+                    <input type="text" matInput fromControlName='addressLastName' />
+                </mat-form-field>
+
+                <mat-form-field class='col-md-12'>
+                    <mat-label>{{ 'Auth.signUp.phoneNumber' | translate }}</mat-label>
+                    <input type="text" matInput fromControlName='phoneNumber' />
+                </mat-form-field>
+
+                <div class="col-md-12 text-center">
+                    <button mat-flat-button class="col-md-12" color="primary">
+                        {{ 'Auth.signUp.complete' | translate}}
+                    </button>
+                </div>
+                
+            </form>
+        </mat-step>
+    </mat-horizontal-stepper>
+</div>

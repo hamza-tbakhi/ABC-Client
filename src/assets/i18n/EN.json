@@ -1,0 +1,45 @@
+{
+    "Auth": {
+        "home" : "Home",
+        "lang" : "عربي",
+        "login": {
+            "signIn": "Sign in",
+            "emailAddressOrPhoneNo": "Email Address or Mobile No",
+            "password": "Password",
+            "sixCharactersAtLeast" : "6 characters at least",
+            "forgotPassword": "Forgot Password?",
+            "rememberMe": "Remember Me",
+            "login": "Login",
+            "noAccountYet": "Do not have account yet? ",
+            "register": "Register",
+            "or": "OR"
+        },
+        "signUp": {
+            "signUp" : "Sign up",
+            "createAccount": "Create an Account",
+            "emailAddress": "Email Address",
+            "firstName": "First Name",
+            "secondName": "Second Name",
+            "thirdName": "Third Name",
+            "fourthName": "Forth Name",
+            "password": "Password",
+            "sixCharactersAtLeast" : "6 characters at least",
+            "confirmPassword" : "Confirm Password",
+            "alreadyHaveAccount" : "Already have an account? ",
+            "or": "OR",
+            "jobTitle": "Job Title",
+            "companyName" : "Company Name",
+            "lastName" : "Last Name",
+            "address" : "Address",
+            "phoneNumber" : "Phone Number",
+            "complete" : "Complete"
+        },
+        "resetPassword" : {
+            "resetYourPassword" : "Reset Your Password",
+            "feelingLost" : "FeelingLost? ",
+            "login": "Login",
+            "register": "Register",
+            "or": "OR"
+        }
+    }
+}
