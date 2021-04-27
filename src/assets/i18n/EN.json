@@ -32,14 +32,23 @@
             "lastName" : "Last Name",
             "address" : "Address",
             "phoneNumber" : "Phone Number",
-            "complete" : "Complete"
+            "complete" : "Complete",
+            "next" : "Next"
         },
         "resetPassword" : {
             "resetYourPassword" : "Reset Your Password",
-            "feelingLost" : "FeelingLost? ",
+            "feelingLost" : "Feeling Lost? ",
             "login": "Login",
             "register": "Register",
-            "or": "OR"
+            "or": "OR",
+            "emailAddress": "Email Address",
+            "mobileNumber" : "Mobile Number",
+            "updatePassword" : "Update Your Password",
+            "enterCode" : "Enter the code we just se to:",
+            "resend" : "Resend",
+            "back" : "Back",
+            "newPassword" : "New Password",
+            "repeatPassword" : "Repeat Password"
         }
     }
 }

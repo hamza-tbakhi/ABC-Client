@@ -3,7 +3,7 @@
 </div>
 
 <div class="container">
-    <mat-horizontal-stepper [disableRipple]="true">
+    <mat-horizontal-stepper [disableRipple]="true" #stepper>
         <mat-step [stepControl]="signUpForm">
             <form [formGroup]="signUpForm">
                 <mat-form-field class='col-md-12'>
@@ -47,8 +47,9 @@
                 </mat-form-field>
 
                 <div class="col-md-12 text-center">
-                    <button mat-flat-button class="col-md-12" color="primary">{{ 'Auth.signUp.signUp' | translate
-                        }}</button>
+                    <button mat-flat-button class="col-md-12" color="primary" (click)="goForward(stepper)">
+                        {{ 'Auth.signUp.next' | translate }}
+                    </button>
                 </div>
 
                 <br />
@@ -123,7 +124,7 @@
 
                 <div class="col-md-12 text-center">
                     <button mat-flat-button class="col-md-12" color="primary">
-                        {{ 'Auth.signUp.complete' | translate}}
+                        {{ 'Auth.signUp.signUp' | translate}}
                     </button>
                 </div>
                 

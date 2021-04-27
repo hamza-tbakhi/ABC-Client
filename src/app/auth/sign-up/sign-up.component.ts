@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatStepper } from '@angular/material/stepper';
 
 @Component({
   selector: 'app-sign-up',
@@ -40,5 +41,19 @@ export class SignUpComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
+
+
+
+
+
+goBack(stepper: MatStepper){
+    stepper.previous();
+}
+
+goForward(stepper: MatStepper){
+    stepper.next();
+}
 
 }

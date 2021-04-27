@@ -29,3 +29,7 @@
 .separator:not(:empty)::before {
   margin-right: 0.25em;
 }
+
+::ng-deep .mat-horizontal-stepper-header {
+  pointer-events: none !important;
+}
