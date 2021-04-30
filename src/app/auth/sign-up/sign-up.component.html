@@ -48,7 +48,7 @@
 
                 <div class="col-md-12 text-center">
                     <button mat-flat-button class="col-md-12" color="primary" (click)="goForward(stepper)">
-                        {{ 'Auth.signUp.next' | translate }}
+                        {{ 'Auth.signUp.signUp' | translate }}
                     </button>
                 </div>
 
@@ -122,12 +122,18 @@
                     <input type="text" matInput fromControlName='phoneNumber' />
                 </mat-form-field>
 
-                <div class="col-md-12 text-center">
-                    <button mat-flat-button class="col-md-12" color="primary">
-                        {{ 'Auth.signUp.signUp' | translate}}
-                    </button>
+                <div class="row text-center">
+                    <div class="col-md-6 mb-2" >
+                        <button mat-flat-button class="col-md-12" color="primary">
+                            {{ 'Auth.signUp.save' | translate}}
+                        </button>
+                    </div>
+                    <div class="col-md-6" >
+                        <button mat-flat-button class="col-md-12" color="primary">
+                            {{ 'Auth.signUp.skip' | translate}}
+                        </button>
+                    </div>
                 </div>
-                
             </form>
         </mat-step>
     </mat-horizontal-stepper>

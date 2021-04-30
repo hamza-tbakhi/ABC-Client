@@ -1,0 +1,107 @@
+<div [dir]="dir">
+    <div class="mat-elevation-z8 text-center py-2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-4 col-sm-4 col-md-3 d-flex align-items-center order-md-0">
+                    <img src="../../../assets/icons/logoGreen.svg" height="80px">
+                </div>
+
+                <div class="col-md-5 inline-pages-wrapper d-flex align-items-center order-md-1 order-4">
+                    <button mat-icon-button class="page-button">
+                        {{"Main.home" | translate}}
+                    </button>
+
+                    <button mat-icon-button class="page-button">
+                        {{"Main.about" | translate}}
+                    </button>
+                    <button mat-icon-button class="page-button">
+                        {{"Main.contactUs" | translate}}
+                    </button>
+                </div>
+
+                <div class="col-8 col-sm-8 col-md-4 text-right d-flex align-items-center order-md-2 p-0">
+                    <button mat-flat-button class="white-button action-button">
+                        {{ 'Main.signUp' | translate}}
+                    </button>
+
+                    <button mat-flat-button color="primary" class="action-button">
+                        {{ 'Main.login' | translate}}
+                    </button>
+
+                    <button mat-icon-button class="action-button" (click)="toggleLanguage()">{{ "Main.lang" |
+                        translate}}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-body">
+        <router-outlet></router-outlet>
+    
+    </div>
+
+    <footer>
+        <div class="footerImage">
+            <div class="container">
+                <div class="row d-flex justify-content-center pt-3">
+                    <div class="col-md-6 text-center">
+                        <div class="separator"><img src="../../../assets/icons/siteLogo.png" height="90px;"></div>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center pt-3">
+                    <div class="row col-md-5">
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <button mat-icon-button class="footer-button">
+                                <img src="../../../assets/icons/Home.png">
+                                <span>{{"Main.home" | translate}}</span>
+                            </button>
+
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-center ">
+                            <button mat-icon-button class="footer-button">
+                                <img src="../../../assets/icons/Info.png">
+                                <span>{{"Main.about" | translate}}</span>
+                            </button>
+
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <button mat-icon-button class="footer-button">
+                                <img src="../../../assets/icons/Message.png">
+                                <span>{{"Main.contactUs" | translate}}</span>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center pt-3">
+                    <div class="row col-md-5 d-flex justify-content-center ">
+                            <button mat-icon-button class="footer-button">
+                                <img src="../../../assets/icons/youtube.png">
+                            </button>
+
+                            <button mat-icon-button class="footer-button">
+                                <img src="../../../assets/icons/linkedIn.png">
+                            </button>
+                            <button mat-icon-button class="footer-button">
+                                <img src="../../../assets/icons/twitter.png">
+                            </button>
+
+                            <button mat-icon-button class="footer-button">
+                                <img src="../../../assets/icons/facebook.png">
+                            </button>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center pt-3">
+                    <div class="row col-md-5 d-flex justify-content-center ">
+                            <span class="text-white">&copy; {{"Main.copyRight" | translate}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>

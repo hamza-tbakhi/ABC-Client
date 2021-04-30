@@ -1,12 +1,12 @@
 {
     "Auth": {
-        "home" : "الرئيسية",
-        "lang" : "English",
+        "home": "الرئيسية",
+        "lang": "English",
         "login": {
             "signIn": "تسجيل الدخول",
             "emailAddressOrPhoneNo": "رقم الهاتف او البريد الالكتروني",
             "password": "كلمة المرور",
-            "sixCharactersAtLeast" : "6 حروف على الأقل",
+            "sixCharactersAtLeast": "6 حروف على الأقل",
             "forgotPassword": "نسيت كلمة المرور؟",
             "rememberMe": "تذكرني",
             "login": "دخول",
@@ -22,33 +22,44 @@
             "thirdName": "الاسم الثالث",
             "fourthName": "الاسم الرابع",
             "password": "كلمة المرور",
-            "sixCharactersAtLeast" : "6 حروف على الأقل",
-            "confirmPassword" : "تأكيد كلمة المرور",
-            "signUp" : "انشاء حساب",
-            "alreadyHaveAccount" : " لديك حساب؟",
+            "sixCharactersAtLeast": "6 حروف على الأقل",
+            "confirmPassword": "تأكيد كلمة المرور",
+            "signUp": "انشاء حساب",
+            "alreadyHaveAccount": " لديك حساب؟",
             "or": "أو",
             "jobTitle": "الاسم الوظيفي",
-            "companyName" : "اسم الشركة",
-            "lastName" : "الاسم الاخير",
-            "address" : "العنوان",
-            "phoneNumber" : "رقم الهاتف",
-            "complete" : "اتمام",
-            "next" : "التالي"
+            "companyName": "اسم الشركة",
+            "lastName": "الاسم الاخير",
+            "address": "العنوان",
+            "phoneNumber": "رقم الهاتف",
+            "complete": "اتمام",
+            "next": "التالي",
+            "save" : "حفظ",
+            "skip" : "تخطي"
         },
-        "resetPassword" : {
-            "resetYourPassword" : "تغيير كلمة المرور",
-            "feelingLost" : "ضائع؟ ",
+        "resetPassword": {
+            "resetYourPassword": "تغيير كلمة المرور",
+            "feelingLost": "ضائع؟ ",
             "login": "دخول",
             "register": "أنشئ حساب",
             "or": "أو",
             "emailAddress": "البريد الالكتروني",
-            "mobileNumber" : "رقم الهاتف",
-            "updatePassword" : "تحديث كلمة المرور",
-            "enterCode" : "ادخل الرمز الذي تم ارساله ل :",
-            "resend" : "اعادة ارسال",
-            "back" : "رجوع",
-            "newPassword" : "كلمة المرور الجديدة",
-            "repeatPassword" : "كرر كلمة المرور"
+            "mobileNumber": "رقم الهاتف",
+            "updatePassword": "تحديث كلمة المرور",
+            "enterCode": "ادخل الرمز الذي تم ارساله ل :",
+            "resend": "اعادة ارسال",
+            "back": "رجوع",
+            "newPassword": "كلمة المرور الجديدة",
+            "repeatPassword": "كرر كلمة المرور"
         }
+    },
+    "Main": {
+        "lang": "English",
+        "home": "الرئيسية",
+        "about": "من نحن",
+        "contactUs": "اتصل بنا",
+        "signUp": "انشاء حساب",
+        "login": "دخول",
+        "copyRight": "تم التطوير بواسطة businicity جميع الحقوق محفوظة"
     }
 }

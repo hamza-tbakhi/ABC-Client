@@ -33,7 +33,9 @@
             "address" : "Address",
             "phoneNumber" : "Phone Number",
             "complete" : "Complete",
-            "next" : "Next"
+            "next" : "Next",
+            "save" : "Save",
+            "skip" : "Skip"
         },
         "resetPassword" : {
             "resetYourPassword" : "Reset Your Password",
@@ -50,5 +52,14 @@
             "newPassword" : "New Password",
             "repeatPassword" : "Repeat Password"
         }
+    },
+    "Main": {
+        "lang" : "عربي",
+        "home": "Home",
+        "about": "About",
+        "contactUs": "Contact Us",
+        "signUp": "Sign Up",
+        "login": "Login",
+        "copyRight": "Developed By Businicity All Rights Reserved."
     }
 }
