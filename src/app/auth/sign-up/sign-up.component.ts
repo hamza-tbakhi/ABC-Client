@@ -53,6 +53,11 @@ goBack(stepper: MatStepper){
 }
 
 goForward(stepper: MatStepper){
+
+//implement api integration to sign up
+
+
+
     stepper.next();
 }
 
