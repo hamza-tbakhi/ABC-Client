@@ -1,0 +1,109 @@
+<mat-card>
+    <div class="row">
+        <mat-card-title class="col-9">
+            <h1>We are here to assist you!</h1>
+        </mat-card-title>
+        <div class="col-3 text-right">
+            <button mat-raised-button color="primary" [routerLink]="'/main/complains-list'">
+                <mat-icon>chevron_left</mat-icon> Back To List
+            </button>
+        </div>
+    </div>
+
+    <mat-card-content>
+        <p class="col-md-10">
+            Please send us details about the incident you would like to report. Our Complaint Center
+            will analyze your complaint and take the appropriate measures in order that the reported situation will not
+            occur at any
+            other time in the future.
+        </p>
+
+        <hr>
+        <form [formGroup]="complainsForm">
+
+            <div class="row col-md-12" [hidden]='!(model.id > 0)'>
+                <mat-form-field class="col-md-6" appearance="outline">
+                    <mat-label>Complaint Status</mat-label>
+                    <mat-select formControlName="complaintStatus"
+                                [disabled]= '!this.model.canEdit'
+                                (selectionChange)="OnStatusChange($event.value)">
+                        <mat-option *ngFor="let status of complaintStatusesList" [value]="status.id">{{status.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+
+            <div class="row col-md-12">
+                <mat-form-field class="col-md-6" appearance="outline">
+                    <mat-label>Date of the reported incident</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="complaintDate" [attr.disabled]='model.id > 0'>
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field class="col-md-6" appearance="outline">
+                    <mat-label>Complainant's Name</mat-label>
+                    <input matInput  formControlName="complainantName" [attr.disabled]='model.id > 0'>
+                </mat-form-field>
+            </div>
+
+            <div class="row col-md-12">
+                <mat-form-field class="col-md-6" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="complainantEmail" [attr.disabled]='model.id > 0'>
+                </mat-form-field>
+
+                <mat-form-field class="col-md-6" appearance="outline">
+                    <mat-label>Incident location</mat-label>
+                    <input matInput formControlName="location" [attr.disabled]='model.id > 0'>
+                </mat-form-field>
+            </div>
+
+            <div class="row col-md-12">
+                <mat-form-field class="col-md-12" appearance="outline">
+                    <mat-label>Nature of Compliant</mat-label>
+                    <mat-select  multiple formControlName="complaintNature" [disabled]='model.id > 0'>
+                        <mat-option *ngFor="let nature of complaintNaturesList" [value]="nature.id">{{nature.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+
+            <div class="row col-md-12">
+                <mat-form-field class="col-md-6" appearance="outline">
+                    <mat-label>Complaint details</mat-label>
+                    <textarea matInput cdkAutosizeMinRows="5" formControlName="complaintDetails" [attr.disabled]='model.id > 0'>
+                        </textarea>
+                </mat-form-field>
+
+                <mat-form-field class="col-md-6" appearance="outline">
+                    <mat-label>Desired outcome</mat-label>
+                    <textarea matInput cdkAutosizeMinRows="5" formControlName="desiredOutcome" [attr.disabled]='model.id > 0'>
+                         </textarea>
+                </mat-form-field>
+            </div>
+
+            <div class="row col-md-12 check-box-container">
+                <mat-checkbox formControlName="noPromotions" [disabled]='model.id > 0'>
+                    I do not wish for the Company to contact me
+                    regarding any promotional or marketing activities
+                </mat-checkbox>
+            </div>
+
+            <br />
+            <br />
+
+            <div  class="row justify-content-center" [hidden] = 'model.id > 0'>
+                <div class="col-md-12 text-center">
+                    <button mat-raised-button color="primary" [disabled]="complainsForm.invalid"
+                        (click)="onSubmitClick()">
+                        Submit
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </mat-card-content>
+</mat-card>

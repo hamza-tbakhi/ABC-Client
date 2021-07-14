@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { AuthService } from './shared/services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +9,25 @@ import { TranslateService } from '@ngx-translate/core';
 })
 
 export class AppComponent {
-  title = 'BusinessCity';
+  title = 'ABC';
 
-
-  constructor(private translate: TranslateService) {
+  constructor(
+    private translate: TranslateService,
+    private authService: AuthService)
+     {
     const lnaguages = ['EN', 'Ar'];
     translate.addLangs(lnaguages);
     translate.use('EN');
   }
 
+
+  toggleLanguage(){
+    const currentLang = this.translate.currentLang
+    currentLang == 'EN' ? this.translate.use('AR') : this.translate.use('EN')
+  }
+
+  OnlogOut(){
+    this.authService.logout();
+  }
 
 }

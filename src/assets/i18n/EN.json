@@ -1,13 +1,11 @@
 {
     "Auth": {
-        "home" : "Home",
         "lang" : "عربي",
         "login": {
-            "signIn": "Sign in",
-            "emailAddressOrPhoneNo": "Email Address or Mobile No",
+            "signIn": "Please Sign In",
+            "userName": "User Name",
             "password": "Password",
             "sixCharactersAtLeast" : "6 characters at least",
-            "forgotPassword": "Forgot Password?",
             "rememberMe": "Remember Me",
             "login": "Login",
             "noAccountYet": "Do not have account yet? ",
@@ -17,11 +15,10 @@
         "signUp": {
             "signUp" : "Sign up",
             "createAccount": "Create an Account",
+            "userName" : "User Name",
             "emailAddress": "Email Address",
-            "firstName": "First Name",
-            "secondName": "Second Name",
-            "thirdName": "Third Name",
-            "fourthName": "Forth Name",
+            "fullName": "Full Name",
+            "phoneNumber": "Phone Number",
             "password": "Password",
             "sixCharactersAtLeast" : "6 characters at least",
             "confirmPassword" : "Confirm Password",
@@ -31,35 +28,12 @@
             "companyName" : "Company Name",
             "lastName" : "Last Name",
             "address" : "Address",
-            "phoneNumber" : "Phone Number",
             "complete" : "Complete",
             "next" : "Next",
             "save" : "Save",
             "skip" : "Skip"
-        },
-        "resetPassword" : {
-            "resetYourPassword" : "Reset Your Password",
-            "feelingLost" : "Feeling Lost? ",
-            "login": "Login",
-            "register": "Register",
-            "or": "OR",
-            "emailAddress": "Email Address",
-            "mobileNumber" : "Mobile Number",
-            "updatePassword" : "Update Your Password",
-            "enterCode" : "Enter the code we just se to:",
-            "resend" : "Resend",
-            "back" : "Back",
-            "newPassword" : "New Password",
-            "repeatPassword" : "Repeat Password"
-        }
+        }        
     },
     "Main": {
-        "lang" : "عربي",
-        "home": "Home",
-        "about": "About",
-        "contactUs": "Contact Us",
-        "signUp": "Sign Up",
-        "login": "Login",
-        "copyRight": "Developed By Businicity All Rights Reserved."
     }
 }

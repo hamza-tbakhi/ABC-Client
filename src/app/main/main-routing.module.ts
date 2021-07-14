@@ -1,26 +1,30 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { MainLayoutComponent } from './main-layout/main-layout.component';
+import { ComplainsFormComponent } from './complains-form/complains-form.component';
+import { ComplainsListComponent } from './complains-list/complains-list.component';
+
 
 const routes: Routes = [
-  {
-  path: '',
-  component: MainLayoutComponent,
-  
-  children: [
     {
       path: '',
-      redirectTo: 'home',
+      redirectTo: 'complains-list',
       pathMatch: 'full',
     },
     {
-      path: 'home',
-      component: HomeComponent,
+      path: 'complains-list',
+      component: ComplainsListComponent,
     },
-  ]
+    {
+      path: 'complains-form/:id',
+      component: ComplainsFormComponent,
+    },
+    {
+      path: 'complains-form',
+      component: ComplainsFormComponent,
+    },
 
-}];
+
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

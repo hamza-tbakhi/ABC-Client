@@ -4,7 +4,7 @@
         "lang": "English",
         "login": {
             "signIn": "تسجيل الدخول",
-            "emailAddressOrPhoneNo": "رقم الهاتف او البريد الالكتروني",
+            "userName": "اسم المستخدم",
             "password": "كلمة المرور",
             "sixCharactersAtLeast": "6 حروف على الأقل",
             "forgotPassword": "نسيت كلمة المرور؟",
@@ -16,11 +16,11 @@
         },
         "signUp": {
             "createAccount": "أنشئ حساب",
+            "userName" : "اسم المستخدم",
             "emailAddress": "البريد الالكتروني",
             "firstName": "الاسم الأول",
-            "secondName": "الاسم الثاني",
-            "thirdName": "الاسم الثالث",
-            "fourthName": "الاسم الرابع",
+            "fullName": "الاسم الكامل",
+            "phoneNumber": "رقم الهاتف",
             "password": "كلمة المرور",
             "sixCharactersAtLeast": "6 حروف على الأقل",
             "confirmPassword": "تأكيد كلمة المرور",
@@ -31,7 +31,7 @@
             "companyName": "اسم الشركة",
             "lastName": "الاسم الاخير",
             "address": "العنوان",
-            "phoneNumber": "رقم الهاتف",
+            
             "complete": "اتمام",
             "next": "التالي",
             "save" : "حفظ",

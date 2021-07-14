@@ -3,14 +3,13 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { MaterialModule } from './material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CarouselComponent } from './carousel/carousel.component';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+import { NgxSpinnerModule } from 'ngx-spinner';
+
 
 
 @NgModule({
 
   declarations: [
-    CarouselComponent
   ],
 
   imports: [
@@ -19,14 +18,14 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    CarouselModule,
+    NgxSpinnerModule,
   ],
   exports: [
     TranslateModule,
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    CarouselComponent
+    NgxSpinnerModule
   ],
 })
 
