@@ -4,6 +4,7 @@ import { loginDTO, RegisterDTO } from '../models/models';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { environment } from 'src/environments/environment';
 import { Router } from '@angular/router';
+import decode from 'jwt-decode';
 
 @Injectable({
   providedIn: 'root'
@@ -59,5 +60,23 @@ export class AuthService {
       return true;
     }
     return false;
+  }
+
+  get isAdmin() {
+    const expectedRoles = ['Admin'];
+    const token = localStorage.getItem(environment.token);
+    const tokenPayload = decode(token);
+    var userRoles = (tokenPayload as any)[environment.roleClaim] as string[];
+    if (Array.isArray(userRoles)) {
+      userRoles.forEach(role => {
+        if (expectedRoles.includes(role)) {
+          return  true;
+        }
+      });
+    } else {
+      if (expectedRoles.includes(userRoles)) {
+        return true;
+      }
+    }
   }
 }

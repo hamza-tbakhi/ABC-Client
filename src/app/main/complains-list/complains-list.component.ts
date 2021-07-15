@@ -33,6 +33,7 @@ export class ComplainsListComponent implements OnInit {
 
   ngOnInit(): void {
     this.fillComplaintList()
+    this.showAdd = !this.authService.isAdmin
   }
 
   fillComplaintList() {
@@ -62,8 +63,6 @@ export class ComplainsListComponent implements OnInit {
           }
         }
       }
-
-      this.showAdd = this.complaintList.some(x => x.canEdit == false);
     }, error => {
       this.spinner.hide();
     })
